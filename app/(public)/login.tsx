@@ -35,8 +35,8 @@ const Login = () => {
     <View style={styles.container}>
       <Spinner visible={loading} />
 
-      <TextInput autoCapitalize="none" placeholder="simon@galaxies.dev" value={emailAddress} onChangeText={setEmailAddress} style={styles.inputField} />
-      <TextInput placeholder="password" value={password} onChangeText={setPassword} secureTextEntry style={styles.inputField} />
+      <TextInput autoCapitalize="none" placeholder="Email or Username" value={emailAddress} onChangeText={setEmailAddress} style={styles.inputField} />
+      <TextInput placeholder="Password" value={password} onChangeText={setPassword} secureTextEntry style={styles.inputField} />
 
       <Button onPress={onSignInPress} title="Login" color={'#6c47ff'}></Button>
 
@@ -51,6 +51,8 @@ const Login = () => {
         </Pressable>
       </Link>
     </View>
+
+		
   );
 };
 
